@@ -1,5 +1,11 @@
 # OpenCode Instructions
 
+## Publish
+Always push changes to the `gh-pages` branch using:
+```bash
+git push -u origin gh-pages
+```
+
 ## Project Overview
 The repository is intended to host a portfolio website that will be published via **GitHub Pages**.
 
