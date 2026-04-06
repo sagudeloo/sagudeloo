@@ -1,10 +1,13 @@
 # OpenCode Instructions
 
 ## Publish
-Always push changes to the `gh-pages` branch using:
-```bash
-git push -u origin gh-pages
-```
+To publish execute the next sets of commands
+
+   ```bash
+   git add .
+   git commit -m "<commit message>"
+   git push origin gh-pages
+   ```
 
 ## Project Overview
 The repository is intended to host a portfolio website that will be published via **GitHub Pages**.
@@ -31,12 +34,9 @@ These commands are the minimal set that an agent would otherwise guess incorrect
    # Ensure the repo settings have “GitHub Pages → Source: main” enabled.
    git push origin main
    ```
-4. **Publish to a dedicated `gh-pages` branch** – if you want the site isolated from source code:
+4. **Push to a dedicated `gh-pages` branch** – if you want the site isolated from source code:
    ```bash
-   git checkout -b gh-pages
-   # (Optional) Copy or symlink your website files into this branch
-   git add .
-   git commit -m "Deploy portfolio"
+   # (Optional) git checkout -b gh-pages
    git push -u origin gh-pages
    ```
 5. **Local preview** – if you use a static site generator, run its dev server (e.g., `hugo serve`, `jekyll serve`).
